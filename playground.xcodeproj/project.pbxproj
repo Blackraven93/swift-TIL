@@ -13,12 +13,14 @@
 		977E6535280C4C3B00B68B0B /* FunctionsAndClosures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsAndClosures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		977E6536280DB1AF00B68B0B /* ObjectsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObjectsAndClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		977E6537280F027600B68B0B /* EnumerationsAndStructures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnumerationsAndStructures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		97FD680D2810555700419D58 /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolsAndExtensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		977E652B280A51DC00B68B0B = {
 			isa = PBXGroup;
 			children = (
+				97FD680D2810555700419D58 /* ProtocolsAndExtensions.playground */,
 				977E6537280F027600B68B0B /* EnumerationsAndStructures.playground */,
 				977E6536280DB1AF00B68B0B /* ObjectsAndClasses.playground */,
 				977E6535280C4C3B00B68B0B /* FunctionsAndClosures.playground */,
