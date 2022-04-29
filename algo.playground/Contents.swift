@@ -51,3 +51,20 @@ func mySolution(_ numbers:[Int]) -> [Int] {
 
 print(solution([2,20,22,40,7,13]))
 print(mySolution([2,20,22,40,7,13]))
+
+
+
+func solution2(_ x:Int, _ n:Int) -> [Int64] {
+    return Array(1...n).map { Int64($0 * x) }
+}
+
+func mySolution2(_ x:Int, _ n:Int) -> [Int64] {
+    var answer:[Int64] = []
+       for count in 0..<n {
+           answer.append(Int64(x * (count + 1)))
+       }
+       return answer
+}
+
+print(solution2(3, 5))
+print(mySolution2(3, 5))
