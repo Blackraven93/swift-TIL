@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		975C5EBC281EB914003DA5D8 /* TheBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9767B70F2811A3C800F62845 /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ErrorHandling.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9767B71028126FF100F62845 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9767B71128198BFA00F62845 /* algo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = algo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -20,9 +21,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		975C5EBB281EB884003DA5D8 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				975C5EBC281EB914003DA5D8 /* TheBasics.playground */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 		977E652B280A51DC00B68B0B = {
 			isa = PBXGroup;
 			children = (
+				975C5EBB281EB884003DA5D8 /* Document */,
 				9767B71128198BFA00F62845 /* algo.playground */,
 				9767B71028126FF100F62845 /* Generics.playground */,
 				9767B70F2811A3C800F62845 /* ErrorHandling.playground */,
