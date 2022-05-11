@@ -20,6 +20,7 @@
 		97EAC38F282124DF008F94F2 /* BasicOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A528261940008F94F2 /* StringsAndCharacters.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringsAndCharacters.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A62827F368008F94F2 /* CollectionType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		97EAC3A7282BFB73008F94F2 /* ControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlFlow.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97FD680D2810555700419D58 /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolsAndExtensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -31,6 +32,7 @@
 				97EAC38F282124DF008F94F2 /* BasicOperators.playground */,
 				97EAC3A528261940008F94F2 /* StringsAndCharacters.playground */,
 				97EAC3A62827F368008F94F2 /* CollectionType.playground */,
+				97EAC3A7282BFB73008F94F2 /* ControlFlow.playground */,
 			);
 			path = Document;
 			sourceTree = "<group>";
