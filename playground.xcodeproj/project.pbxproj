@@ -21,6 +21,7 @@
 		97EAC3A528261940008F94F2 /* StringsAndCharacters.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringsAndCharacters.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A62827F368008F94F2 /* CollectionType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A7282BFB73008F94F2 /* ControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlFlow.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		97EAC3A9282D6610008F94F2 /* Function.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Function.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97FD680D2810555700419D58 /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolsAndExtensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -33,6 +34,7 @@
 				97EAC3A528261940008F94F2 /* StringsAndCharacters.playground */,
 				97EAC3A62827F368008F94F2 /* CollectionType.playground */,
 				97EAC3A7282BFB73008F94F2 /* ControlFlow.playground */,
+				97EAC3A9282D6610008F94F2 /* Function.playground */,
 			);
 			path = Document;
 			sourceTree = "<group>";
