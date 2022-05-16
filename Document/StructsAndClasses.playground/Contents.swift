@@ -56,7 +56,6 @@ class Greeting {
 var bird = Greeting(name: "raven")
 var newBird = bird
 var newBird2 = bird
-
 newBird.name = "swallow"
 bird.greeting()
 
