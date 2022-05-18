@@ -28,6 +28,7 @@
 		97EAC3AD28329C0A008F94F2 /* Properties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Properties.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97FB814C28354155004B09E1 /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Methods.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97FB814D28354AAA004B09E1 /* Subscripts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscripts.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		97FB814E28354DCA004B09E1 /* Inheritance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Inheritance.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97FD680D2810555700419D58 /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolsAndExtensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -47,6 +48,7 @@
 				97EAC3AD28329C0A008F94F2 /* Properties.playground */,
 				97FB814C28354155004B09E1 /* Methods.playground */,
 				97FB814D28354AAA004B09E1 /* Subscripts.playground */,
+				97FB814E28354DCA004B09E1 /* Inheritance.playground */,
 			);
 			path = Document;
 			sourceTree = "<group>";

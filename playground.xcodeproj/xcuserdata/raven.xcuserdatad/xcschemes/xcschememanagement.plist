@@ -214,6 +214,27 @@
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
+		<key>Inheritance (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>Inheritance (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
+		<key>Inheritance (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 		<key>Methods (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
