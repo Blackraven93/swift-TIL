@@ -340,6 +340,27 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>OptionalChaining (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>OptionalChaining (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>OptionalChaining (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>Properties (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
