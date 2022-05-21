@@ -18,6 +18,7 @@
 		977E6536280DB1AF00B68B0B /* ObjectsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObjectsAndClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		977E6537280F027600B68B0B /* EnumerationsAndStructures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnumerationsAndStructures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97850965283672210033F65F /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9785097528399DFA0033F65F /* Deinitialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Deinitialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC38F282124DF008F94F2 /* BasicOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BasicOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A528261940008F94F2 /* StringsAndCharacters.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringsAndCharacters.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97EAC3A62827F368008F94F2 /* CollectionType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -51,6 +52,7 @@
 				97FB814D28354AAA004B09E1 /* Subscripts.playground */,
 				97FB814E28354DCA004B09E1 /* Inheritance.playground */,
 				97850965283672210033F65F /* Initialization.playground */,
+				9785097528399DFA0033F65F /* Deinitialization.playground */,
 			);
 			path = Document;
 			sourceTree = "<group>";
