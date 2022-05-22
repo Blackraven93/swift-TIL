@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		973B3E69283A734B00F98571 /* TypeCasting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TypeCasting.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		975C5EBC281EB914003DA5D8 /* TheBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9767B70F2811A3C800F62845 /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ErrorHandling.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9767B71028126FF100F62845 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -59,6 +60,7 @@
 				978509762839A2D00033F65F /* OptionalChaining.playground */,
 				978509772839B2B50033F65F /* ErrorHandling.playground */,
 				97C50D86283A62EC00417C5C /* Concurrency.playground */,
+				973B3E69283A734B00F98571 /* TypeCasting.playground */,
 			);
 			path = Document;
 			sourceTree = "<group>";
