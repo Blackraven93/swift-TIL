@@ -54,3 +54,42 @@ let favoriteFood = """
 """
 
 print(favoriteFood)
+
+// type 추론
+var name = "raven"
+
+typealias MyInt = Int
+typealias YourInt = Int
+typealias MyDouble = Double
+
+let age: MyInt = 100
+var year: YourInt = 2080
+
+// MyInt도, YourInt도 Int이기 때문에 같은 타입으로 취급한다.
+year = age
+
+let month: Int = 7 // 물론 기존의 Int도 사용 가능한다.
+let percentage: MyDouble = 99.9 // Int 외에 다른 자료형도 모두 별칭 사용이 가능합니다.
+
+// Tuple (튜플)
+// String, Int, Double 타입을 갖는 튜플
+var person: (String, Int, Double) = ("yagom", 100, 182.5)
+
+// 인덱스를 통해서 값을 빼 올 수 있습니다.
+print("이름 \(person.0), 나이: \(person.1), 신장: \(person.2)")
+
+person.1 = 99
+person.2 = 178.5
+
+print("이름 \(person.0), 나이: \(person.1), 신장: \(person.2)")
+
+typealias PersonTuple = (name:String, age:Int, height:Double)
+
+let yagom: PersonTuple = ("yagom", 100, 178.5)
+let eric: PersonTuple = ("eric", 150, 183.5)
+
+print("이름 \(yagom.name), 나이: \(yagom.age), 신장: \(yagom.height)")
+print("이름 \(eric.name), 나이: \(eric.age), 신장: \(eric.height)")
+
+
+
