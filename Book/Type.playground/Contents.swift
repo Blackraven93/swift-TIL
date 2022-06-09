@@ -56,7 +56,7 @@ let favoriteFood = """
 print(favoriteFood)
 
 // type 추론
-var name = "raven"
+// var name = "raven"
 
 typealias MyInt = Int
 typealias YourInt = Int
@@ -73,7 +73,7 @@ let percentage: MyDouble = 99.9 // Int 외에 다른 자료형도 모두 별칭 
 
 // Tuple (튜플)
 // String, Int, Double 타입을 갖는 튜플
-var person: (String, Int, Double) = ("yagom", 100, 182.5)
+var person: (String, Int, Double) = ("raven", 100, 182.5)
 
 // 인덱스를 통해서 값을 빼 올 수 있습니다.
 print("이름 \(person.0), 나이: \(person.1), 신장: \(person.2)")
@@ -85,11 +85,39 @@ print("이름 \(person.0), 나이: \(person.1), 신장: \(person.2)")
 
 typealias PersonTuple = (name:String, age:Int, height:Double)
 
-let yagom: PersonTuple = ("yagom", 100, 178.5)
-let eric: PersonTuple = ("eric", 150, 183.5)
+let raven: PersonTuple = ("raven", 100, 178.5)
+let swallow: PersonTuple = ("swallow", 150, 183.5)
 
-print("이름 \(yagom.name), 나이: \(yagom.age), 신장: \(yagom.height)")
-print("이름 \(eric.name), 나이: \(eric.age), 신장: \(eric.height)")
+print("이름 \(raven.name), 나이: \(raven.age), 신장: \(raven.height)")
+print("이름 \(swallow.name), 나이: \(swallow.age), 신장: \(swallow.height)")
 
+// Collection형 Array(배열)
+// var names:Array<String> = ["raven", "swallow", "woodpecker", "pidgon", "raven"]
+// 축약표현
+var names:[String] = ["raven", "swallow", "woodpecker", "pidgon", "raven"]
 
+// var emptyArray: [Any] = [Any]() // array 생성
+// var emptyArray: [Any] = Array<Any>() // 동일
 
+// 타입을 명시했다면 [] 만으로도 가능
+var emptyArray: [Any] = []
+print(emptyArray.isEmpty)
+print(emptyArray.count)
+
+print(names[2])
+print(names[3])
+names.append("parrot")
+names.append(contentsOf: ["goose", "eagle"])
+print(names)
+names.insert("Swallow", at: 1)
+print(names)
+
+print(names.firstIndex(of: "goose"))
+print(names.first)
+print(names.last)
+let popFirstItem: String = names.removeFirst()
+let popLastItem: String = names.removeLast()
+
+print(popFirstItem, popLastItem)
+print(names)
+print(names[1 ... 3])
