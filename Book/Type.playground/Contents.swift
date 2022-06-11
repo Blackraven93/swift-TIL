@@ -121,3 +121,26 @@ let popLastItem: String = names.removeLast()
 print(popFirstItem, popLastItem)
 print(names)
 print(names[1 ... 3])
+
+
+// 딕셔너리
+typealias StringIntDictionary = [String:Int]
+
+// 빈 딕셔너리 생성
+var numberForName: Dictionary<String, Int> = Dictionary<String, Int>()
+print(numberForName)
+
+var numberForName2: [String:Int] = [String:Int]()
+var numberForName3: StringIntDictionary = StringIntDictionary()
+print(numberForName3)
+
+var numberForName4: [String: Int] = [:]
+
+var numberForName5: [String: Int] = ["raven":100, "swallow":200, "pigdon":300]
+print(numberForName5.isEmpty)
+print(numberForName5.count)
+
+print(numberForName5["raven", default: 10])
+
+numberForName5.removeValue(forKey: "swallow")
+print(numberForName5["swallow", default: 0])
