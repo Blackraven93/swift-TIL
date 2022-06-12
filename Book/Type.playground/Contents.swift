@@ -123,7 +123,7 @@ print(names)
 print(names[1 ... 3])
 
 
-// 딕셔너리
+// Collection형 Dictionary(딕셔너리)
 typealias StringIntDictionary = [String:Int]
 
 // 빈 딕셔너리 생성
@@ -144,3 +144,53 @@ print(numberForName5["raven", default: 10])
 
 numberForName5.removeValue(forKey: "swallow")
 print(numberForName5["swallow", default: 0])
+
+// Collection형 Set(셋)
+
+var setNames: Set<String> = Set<String>()
+var setNames2: Set<String> = []
+var setnames3: Set<String> = ["raven", "swallow", "woodpecker", "parrot", "eagle", "goose"]
+
+// 타입 추론시에는 array
+let temp = [1,2,3,4,5]
+print(type(of: temp))
+
+print(setnames3.isEmpty)
+print(setnames3.count)
+
+setnames3.insert("pigdon")
+print(setnames3)
+setnames3.remove(at: setnames3.startIndex)
+print(setnames3)
+setnames3.remove("raven")
+print(setnames3)
+
+var eatMeatClassAnimal: Set<String> = ["pig", "lion", "tiger", "eagle"]
+var birdClassAnimal: Set = ["raven", "goose", "eagle"]
+
+// 교집합
+let intersectSet: Set<String> = eatMeatClassAnimal.intersection(birdClassAnimal)
+print(intersectSet)
+
+// 여집합
+let symmetricDiffSet: Set<String> = eatMeatClassAnimal.symmetricDifference(birdClassAnimal)
+print(symmetricDiffSet)
+
+// 합집합
+let unionSet: Set<String> = eatMeatClassAnimal.union(birdClassAnimal)
+print(unionSet)
+
+// 차집합
+let subtractSet: Set<String> = eatMeatClassAnimal.subtracting(birdClassAnimal)
+print(subtractSet)
+
+print(unionSet.sorted())
+
+birdClassAnimal.popFirst()
+
+print(birdClassAnimal)
+
+print(eatMeatClassAnimal.isDisjoint(with: birdClassAnimal)) // 상호 배타적인가?
+print(eatMeatClassAnimal.isSubset(of: birdClassAnimal)) // 부분집합인가?
+print(eatMeatClassAnimal.isSuperset(of: birdClassAnimal)) // 전체집합인가?
+print(eatMeatClassAnimal.isSuperset(of: birdClassAnimal))
