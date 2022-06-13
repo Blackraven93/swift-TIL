@@ -194,3 +194,18 @@ print(eatMeatClassAnimal.isDisjoint(with: birdClassAnimal)) // 상호 배타적�
 print(eatMeatClassAnimal.isSubset(of: birdClassAnimal)) // 부분집합인가?
 print(eatMeatClassAnimal.isSuperset(of: birdClassAnimal)) // 전체집합인가?
 print(eatMeatClassAnimal.isSuperset(of: birdClassAnimal))
+
+var array: [Int] = [0,1,2,3,4,5,6]
+
+print(array.randomElement()!)
+print(array.shuffled())
+
+// set은 순서가 없음!
+
+var stringShuffle: String = "string"
+
+var dict:[String: Int] = ["a":1, "b":2, "c":3]
+
+print(stringShuffle.shuffled())
+print(dict.shuffled())
+
