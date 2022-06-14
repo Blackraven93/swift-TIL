@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 // Int +, - 를 포함한 정수
 // UInt 0을 포함한 양의 정수
@@ -209,3 +210,54 @@ var dict:[String: Int] = ["a":1, "b":2, "c":3]
 print(stringShuffle.shuffled())
 print(dict.shuffled())
 
+enum School {
+    case primary
+    case elementary
+    case middle
+    case high
+    case college
+    case university
+    case graduate
+}
+
+enum Bird {
+    case eagle, raven, parrot
+}
+
+// var highestEducationLevel: School = School.university
+// 하위와 같은 표현
+
+var highestEducationLevel: School = .university
+
+highestEducationLevel = .graduate
+
+print(highestEducationLevel)
+
+print(type(of: highestEducationLevel))
+
+enum WeekDays: Character {
+    case mon = "월"
+    case tue = "화"
+    case wed = "수"
+    case thu = "목"
+    case fri = "금"
+    case sat = "토"
+    case sun = "일"
+}
+
+let today: WeekDays = WeekDays.fri
+print("오늘은 \(today.rawValue) 요일입니다.")
+
+enum Numbers: Int {
+    case zero
+    case one
+    case two
+    case ten = 10
+}
+
+print("\(Numbers.zero.rawValue), \(Numbers.one.rawValue)")
+
+// let primary = School(RawValue: "유치원")
+// print(primary)
+
+// let graduate = School(rawValue: "석박사")
