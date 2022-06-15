@@ -210,30 +210,30 @@ var dict:[String: Int] = ["a":1, "b":2, "c":3]
 print(stringShuffle.shuffled())
 print(dict.shuffled())
 
-enum School {
-    case primary
-    case elementary
-    case middle
-    case high
-    case college
-    case university
-    case graduate
-}
-
-enum Bird {
-    case eagle, raven, parrot
-}
-
-// var highestEducationLevel: School = School.university
-// 하위와 같은 표현
-
-var highestEducationLevel: School = .university
-
-highestEducationLevel = .graduate
-
-print(highestEducationLevel)
-
-print(type(of: highestEducationLevel))
+//enum School: CaseIterable {
+//    case primary
+//    case elementary
+//    case middle
+//    case high
+//    case college
+//    case university
+//    case graduate
+//}
+//
+//enum Bird {
+//    case eagle, raven, parrot
+//}
+//
+//// var highestEducationLevel: School = School.university
+//// 하위와 같은 표현
+//
+//var highestEducationLevel: School = .university
+//
+//highestEducationLevel = .graduate
+//
+//print(highestEducationLevel)
+//
+//print(type(of: highestEducationLevel))
 
 enum WeekDays: Character {
     case mon = "월"
@@ -244,7 +244,8 @@ enum WeekDays: Character {
     case sat = "토"
     case sun = "일"
 }
-
+// 원시 값을 가지고 오고 싶다면 특정 타입을 명시해주어야함
+// 부가적으로 rawValue를 가져올 수 있음
 let today: WeekDays = WeekDays.fri
 print("오늘은 \(today.rawValue) 요일입니다.")
 
@@ -261,3 +262,105 @@ print("\(Numbers.zero.rawValue), \(Numbers.one.rawValue)")
 // print(primary)
 
 // let graduate = School(rawValue: "석박사")
+
+//enum MainDish {
+//    case pasta(taste: String)
+//    case pizza(dough: String, topping: String)
+//    case chicken(withSauce: Bool)
+//    case rice
+//}
+//
+//var dinner: MainDish = MainDish.pasta(taste: "크림")
+//dinner = .pizza(dough: "치즈", topping: "불고기")
+//dinner = .chicken(withSauce: true)
+//dinner = .rice
+
+enum PastaTaste {
+    case cream, tomato
+}
+
+enum PizzaDough {
+    case cheeseCrust, thin, original
+}
+
+enum PizzaTopping {
+    case pepperoni, cheese, bacon
+}
+
+enum MainDish {
+    case pasta(taste: PastaTaste)
+    case pizza(dough: PizzaDough, topping: PizzaTopping)
+    case chicken(withSauce: Bool)
+    case rice
+}
+
+
+var dinner = MainDish.pasta(taste: PastaTaste.tomato)
+dinner = MainDish.pizza(dough: PizzaDough.original, topping: PizzaTopping.bacon)
+
+// Caseiterable 프로토콜을 장착할 때 allCases를 사용할 수 있음
+//let allCases: [School] = School.allCases
+//print(allCases)
+
+enum School: String, CaseIterable {
+    case primary = "유치원"
+    case elementary = "초등학교"
+    case middle = "중학교"
+    case high = "고등학교"
+    case college = "대학"
+    case university = "대학교"
+//    @available(iOS, obsolteted: 12.0)
+    case graduate = "대학원"
+    
+    static var allCases: [School] {
+        let all: [School] = [
+            .primary,
+            .elementary,
+            .middle,
+            .high,
+            .college,
+            .university
+        ]
+        
+        #if os(iOS)
+        return all
+        #else
+        return all + [.graduate]
+        #endif
+    }
+}
+
+let allCases: [School] = School.allCases
+print(allCases)
+
+// 순환 열거형
+// 일괄 부분 모두 가능
+
+
+
+
+indirect enum ArithmeticExpression {
+    case number(Int)
+    case addition(ArithmeticExpression, ArithmeticExpression)
+    case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+
+let five = ArithmeticExpression.number(5)
+let four = ArithmeticExpression.number(4)
+
+let sum = ArithmeticExpression.addition(five, four)
+let final = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
+
+func evaluate(_ expression: ArithmeticExpression) -> Int {
+    switch expression {
+    case.number(let value):
+        return value
+    case .addition(let left, let right):
+        return evaluate(left) + evaluate(right)
+    case .multiplication(let left, let right):
+        return evaluate(left) * evaluate(right)
+    }
+}
+
+let result: Int = evaluate(final)
+print("(5 + 4) * 2 = \(result)")
