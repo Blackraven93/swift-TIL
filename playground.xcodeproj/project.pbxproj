@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		9727A8B228859A4800819784 /* UIKitSample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIKitSample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9727A8B328859B2F00819784 /* UIKit.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UIKit.md; sourceTree = "<group>"; };
 		973B3E69283A734B00F98571 /* TypeCasting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TypeCasting.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		973B3F00283E835300F98571 /* NestedTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NestedTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		973B3F012841100500F98571 /* Extenstions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extenstions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -47,6 +49,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		9727A8B128859A2E00819784 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9727A8B228859A4800819784 /* UIKitSample.playground */,
+				9727A8B328859B2F00819784 /* UIKit.md */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		975C5EBB281EB884003DA5D8 /* Document */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 		977E652B280A51DC00B68B0B = {
 			isa = PBXGroup;
 			children = (
+				9727A8B128859A2E00819784 /* UIKit */,
 				9741BFBA28807A53005C61C5 /* README.md */,
 				97E5DBCB284AD18000351371 /* Book */,
 				975C5EBB281EB884003DA5D8 /* Document */,
@@ -113,7 +125,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 			};
 			buildConfigurationList = 977E652F280A51DC00B68B0B /* Build configuration list for PBXProject "playground" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -135,12 +147,66 @@
 		977E6530280A51DC00B68B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		977E6531280A51DC00B68B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
