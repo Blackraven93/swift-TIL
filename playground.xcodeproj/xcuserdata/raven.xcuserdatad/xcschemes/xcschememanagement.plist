@@ -65,7 +65,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Concurrency (Playground) 1.xcscheme</key>
 		<dict>
@@ -394,7 +394,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>0</integer>
 		</dict>
 		<key>ObjectsAndClasses (Playground) 1.xcscheme</key>
 		<dict>
@@ -654,6 +654,13 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
+		</dict>
+		<key>UIKitSample (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>algo (Playground) 1.xcscheme</key>
 		<dict>

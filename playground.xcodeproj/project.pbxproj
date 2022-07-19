@@ -29,6 +29,7 @@
 		9785097528399DFA0033F65F /* Deinitialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Deinitialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		978509762839A2D00033F65F /* OptionalChaining.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalChaining.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		978509772839B2B50033F65F /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ErrorHandling.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		97C17C7E28862D4F00A510CA /* SwiftUISample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftUISample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97C50D86283A62EC00417C5C /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97E5DBCC284ADAAD00351371 /* Type.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Type.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		97E5DBCD2857786800351371 /* OpaqueTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpaqueTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -92,6 +93,7 @@
 		977E652B280A51DC00B68B0B = {
 			isa = PBXGroup;
 			children = (
+				97C17C7D28862CBC00A510CA /* SwiftUI */,
 				9727A8B128859A2E00819784 /* UIKit */,
 				9741BFBA28807A53005C61C5 /* README.md */,
 				97E5DBCB284AD18000351371 /* Book */,
@@ -107,6 +109,14 @@
 				977E6533280A523400B68B0B /* values.playground */,
 				977E6532280A520600B68B0B /* Tutorial.tutorial */,
 			);
+			sourceTree = "<group>";
+		};
+		97C17C7D28862CBC00A510CA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				97C17C7E28862D4F00A510CA /* SwiftUISample.playground */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		97E5DBCB284AD18000351371 /* Book */ = {
