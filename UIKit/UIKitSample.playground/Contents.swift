@@ -12,7 +12,7 @@ class MyViewController : UIViewController {
         label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
         label.text = "Test View!"
         label.textColor = .black
-        
+        label.shadowColor = .gray
         view.addSubview(label)
         self.view = view
     }

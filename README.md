@@ -110,3 +110,49 @@ var set: Set<String> = []
 - set.isSubset(of: Set): self 집합이 인자집합의 부분집합인가?
 - set.isSuperset(of: Set): self 집합은 인자집합의 전체집합인가?
 
+## Enum
+
+### 열거형 사용처
+
+1. 제한된 선택자를 주고 싶을 때
+2. 정해진 값 외에는 입력받고 싶지 않을 때
+3. 예상된 입력 값이 한정되어 있을 때
+
+rawValue 사용
+```swift
+enum School: String {
+    case primary = "유치원"
+}
+
+let primarySchool: School = .primary.rawValue
+```
+
+case 함수 등록
+```swift
+enum MainDish {
+    case pasta(taste: String)
+    case pizza(dough: String, topping: String)
+}
+
+var dinner: MainDish = .pasta(taste: "크림")
+```
+
+### CaseIterable protocol
+
+CaseIterable 프로토콜 채택시 allCases를 사용
+- 다만 available을 사용하여 기기호환성을 고려할 때는 사용 불가
+- 그때는 직접 allCases를 구현해야한다.
+- 또한 열거형의 케이스가 연관 값을 갖는 경우 불가
+```swift
+static var allCases: [Type]
+```
+
+순환 열거형
+열거형 전체에 자신의 값을 사용하거나
+특정 항목에 순호나 열거를 사용할 때 `indirect` 키워드를 붙인다
+
+- indirect enum ArithmeticExpression
+- 이진 탐색 트리, 순환 알고리즘을 구현할 때 유용 (재귀)
+
+
+
