@@ -155,4 +155,21 @@ static var allCases: [Type]
 - 이진 탐색 트리, 순환 알고리즘을 구현할 때 유용 (재귀)
 
 
+## Operator
+
+나머지
+(Double, Int).truncatingRemainder(dividingBy: number)
+
+범위 연산자
+
+- A...B : A부터 B (A,B 포함)
+- A..<B : A부터 B 미만까지(A 포함 B 미포함)
+- A... : A 이상의 수
+- ...A : A 이하의 수
+- ..<A : A 이하의 수 (A 미포함)
+
+오버플로 연산?
+
+스위프트는 연산자 우선순위와 결합방향이 존재한다
+
 
