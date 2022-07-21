@@ -79,39 +79,95 @@ print(isEmptyString)
 //
 //print(resultString)
 
-postfix operator **
-postfix func ** (value: Int) -> Int {
-    return value + 10
-}
-
-let five: Int = 5
-let fivePlusTen: Int = five**
-
-print(fivePlusTen)
-
-prefix operator **
-postfix operator **
-
-prefix func ** (value: Int) -> Int {
-    return value * value
-}
-
-postfix func ** (value: Int) -> Int {
-    return value + 10
-}
-
-let five: Int = 5
-let sqrtFivePlusTen: Int = **five**
-
-print(sqrtFivePlusTen) // ( 10 + 5 ) * ( 10 + 5 ) == 225
+//postfix operator **
+//postfix func ** (value: Int) -> Int {
+//    return value + 10
+//}
+//
+//let five: Int = 5
+//let fivePlusTen: Int = five**
+//
+//print(fivePlusTen)
+//
+//prefix operator **
+//postfix operator **
+//
+//prefix func ** (value: Int) -> Int {
+//    return value * value
+//}
+//
+//postfix func ** (value: Int) -> Int {
+//    return value + 10
+//}
+//
+//let five: Int = 5
+//let sqrtFivePlusTen: Int = **five**
+//
+//print(sqrtFivePlusTen) // ( 10 + 5 ) * ( 10 + 5 ) == 225
 
 // MARK: 중위 연산자 정의와 구현
-precedencegroup 우선순위 그룹 이름 {
-    higherThan: 더 낮은 우선순위 그룹 이름
-    lowerThan: 더 높은 우선순위 그룹 이름
-    associativity: 결합방향(left / right / none)
-    assignment: 할당방향 사용(true / false)
+//precedencegroup 우선순위 그룹 이름 {
+//    higherThan: 더 낮은 우선순위 그룹 이름
+//    lowerThan: 더 높은 우선순위 그룹 이름
+//    associativity: 결합방향(left / right / none)
+//    assignment: 할당방향 사용(true / false)
+//}
+
+class Car {
+    var modelYear: Int? // 연식
+    var modelName: String? // 모델 이름
 }
+
+struct SmartPhone {
+    var company: String?
+    var model: String?
+}
+
+// Car 클래스의 인스턴스끼리 == 연산했을 때 modelName이 같다면 true를 반환
+func == (lhs: Car, rhs: Car) -> Bool {
+    return lhs.modelName == rhs.modelName
+}
+
+// SmartPhone 구조체의 인스턴스끼리 == 연산했을 때 model이 같다면 true를 반환
+func == (lhs: SmartPhone, rhs: SmartPhone) -> Bool {
+    return lhs.model == rhs.model
+}
+
+let myCar = Car()
+myCar.modelName = "S"
+
+let yourCar = Car()
+yourCar.modelName = "S"
+
+var myPhone = SmartPhone()
+myPhone.model = "SE"
+
+var yourPhone = SmartPhone()
+yourPhone.model = "6"
+
+print(myCar == yourCar)
+print(myPhone == yourPhone)
+
+
+class CarI {
+    var modelYear: Int?
+    var modelName: String?
+    
+    static func == (lhs: CarI, rhs: CarI) -> Bool {
+        return lhs.modelName == rhs.modelName
+    }
+}
+
+struct SmartPhoneI {
+    var company: String?
+    var model: String?
+    
+    static func == (lhs: SmartPhoneI, rhs: SmartPhoneI) -> Bool {
+        return lhs.model == rhs.model
+    }
+}
+
+
 
 
 
