@@ -1,3 +1,5 @@
+import Foundation
+
 // MARK: - 나머지 연산
 var number: Double = 5
 var result: Double = number.truncatingRemainder(dividingBy: 1.5)
@@ -114,8 +116,8 @@ print(isEmptyString)
 //}
 
 class Car {
-    var modelYear: Int? // 연식
-    var modelName: String? // 모델 이름
+    var modelYear: Int?
+    var modelName: String?
 }
 
 struct SmartPhone {
@@ -147,28 +149,4 @@ yourPhone.model = "6"
 
 print(myCar == yourCar)
 print(myPhone == yourPhone)
-
-
-class CarI {
-    var modelYear: Int?
-    var modelName: String?
-    
-    static func == (lhs: CarI, rhs: CarI) -> Bool {
-        return lhs.modelName == rhs.modelName
-    }
-}
-
-struct SmartPhoneI {
-    var company: String?
-    var model: String?
-    
-    static func == (lhs: SmartPhoneI, rhs: SmartPhoneI) -> Bool {
-        return lhs.model == rhs.model
-    }
-}
-
-
-
-
-
 
