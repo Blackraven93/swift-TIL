@@ -100,3 +100,67 @@ func printMathResult(_ calculate: CalculateTwoInts, _ front: Int, _ back: Int) -
 
 print(printMathResult(calculate, 10, 2))
 
+typealias MoveFunc = (Int) -> Int
+
+func goRight(_ currentPosition: Int) -> Int {
+    return currentPosition + 1
+}
+
+func goLeft(_ currentPosition: Int) -> Int {
+    return currentPosition - 1
+}
+
+func functionForMove(_ shouldGoLeft: Bool) -> MoveFunc {
+    return shouldGoLeft ? goLeft : goRight
+}
+
+var position: Int = 3
+
+let moveToZero: MoveFunc = functionForMove(position > 0)
+print("3에서 시작")
+
+while position != 0 {
+    print("\(position)...")
+    position = moveToZero(position)
+}
+
+// MARK: position = 0
+print("원점 도착!")
+
+// MARK: 종료되지 않는 함수
+
+func crashAndBurn() -> Never {
+    fatalError("Something very bad happened")
+}
+
+//crashAndBurn()
+
+func someFunction(isAllIsWell: Bool) {
+    guard isAllIsWell else {
+        print("Error!")
+        crashAndBurn()
+    }
+    
+    print("All is well!")
+}
+
+
+someFunction(isAllIsWell: true)
+//someFunction(isAllIsWell: false)
+
+// 함수의 반호나이 꼭 필요하지 않는 경우
+
+func say(_ something: String) -> String {
+    print(something)
+    return something
+}
+
+// MARK: 반환값을 사용하지 않을 수 있음
+@discardableResult func discadableResultSay(_ something: String) -> String {
+    print(something)
+    return something
+}
+
+say("Hello")
+discadableResultSay("Hello")
+
